@@ -695,7 +695,7 @@ def Build_key_recovery(r_in, r_dist, r_out, beta=1):
     Build_key_bridging(beta, r_in, r_dist, r_out, state_MC, {}, {}, uk_out, K_total)
 
     # Guessing the whole 256-bit key is not a meaningful attack.
-    Rijndael.addConstr(K_total <= 28)
+    Rijndael.addConstr(K_total <= 31)
 
 
 # ================= Objective =================
